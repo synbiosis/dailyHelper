@@ -22,16 +22,20 @@ def timer():
 frame_tasks = tkinter.Frame(root)
 frame_tasks.pack()
 
-entry_time = tkinter.Entry(root, width = 50)
+entry_time = tkinter.Entry(root)
+entry_time.config(font=("Courier", 30))
 entry_time.pack()
 
-checkbox1 = Checkbutton(root, text = "Research Networking for IB", width = 70, command = timer)
+checkbox1 = Checkbutton(root, text = "Research Networking for IB", width = 50, command = timer, anchor = 'w')
+checkbox1.config(font=("Courier", 30))
 checkbox1.pack()
 
-checkbox2 = Checkbutton(root, text = "youROK", width = 70, command = timer)
+checkbox2 = Checkbutton(root, text = "youROK", width = 50, command = timer, anchor = 'w')
+checkbox2.config(font=("Courier", 30))
 checkbox2.pack()
 
-checkbox3 = Checkbutton(root, text = "Meditation", width = 70, command = timer)
+checkbox3 = Checkbutton(root, text = "Meditation", width = 50, command = timer, anchor = 'w')
+checkbox3.config(font=("Courier", 30))
 checkbox3.pack()
 
 #creates the window
